@@ -1,0 +1,7 @@
+python finetune_glm.py --expname glm-roberta-large-wiqa1-notune --test_only --backbone "BAAI/glm-roberta-large" --epoch 3 --warmup_steps 2000 --train_bsz 16 --gradient_accumulation_steps 4 --eval_bsz 32 --dataset wiqa --prompt "what_might_be_the_first_step_of_the_process"
+python finetune_glm.py --expname glm-roberta-large-wiqa2-notune --test_only --backbone "BAAI/glm-roberta-large" --epoch 3 --warmup_steps 2000 --train_bsz 16 --gradient_accumulation_steps 4 --eval_bsz 32 --dataset wiqa --prompt "what_might_be_the_last_step_of_the_process"
+python finetune_glm.py --expname glm-roberta-large-wiqa3-notune --test_only --backbone "BAAI/glm-roberta-large" --epoch 3 --warmup_steps 2000 --train_bsz 16 --gradient_accumulation_steps 4 --eval_bsz 32 --dataset wiqa --prompt "what_is_the_missing_first_step"
+
+python finetune_glm.py --expname glm-roberta-large-wiqa1 --backbone "BAAI/glm-roberta-large" --epoch 3 --warmup_steps 2000 --train_bsz 16 --gradient_accumulation_steps 4 --eval_bsz 32 --dataset wiqa --prompt "what_might_be_the_first_step_of_the_process"
+python finetune_glm.py --expname glm-roberta-large-wiqa2 --backbone "BAAI/glm-roberta-large" --epoch 3 --warmup_steps 2000 --train_bsz 16 --gradient_accumulation_steps 4 --eval_bsz 32 --dataset wiqa --prompt "what_might_be_the_last_step_of_the_process"
+python finetune_glm.py --expname glm-roberta-large-wiqa3 --backbone "BAAI/glm-roberta-large" --epoch 3 --warmup_steps 2000 --train_bsz 16 --gradient_accumulation_steps 4 --eval_bsz 32 --dataset wiqa --prompt "what_is_the_missing_first_step"

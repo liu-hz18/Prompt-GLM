@@ -1,0 +1,9 @@
+nltk==3.7
+numpy==1.23.4
+promptsource==0.2.3
+scikit_learn==1.2.0
+scipy==1.9.3
+sentencepiece==0.1.97
+torch==1.13.0
+tqdm==4.64.1
+transformers==4.24.0
